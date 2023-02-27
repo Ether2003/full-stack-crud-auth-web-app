@@ -1,0 +1,23 @@
+##################################################################################
+## the file contains HTTP requests for the authentication process               ##
+## author: Refaat 🌻                                                            ##
+##################################################################################
+
+### Register a new user ###
+POST http://localhost:3333/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "Ether@gmail.com",
+    "password": "password",
+    "confirmPassword": "password"
+}
+
+### authenticate a user ###
+POST http://localhost:3333/auth/authenticate HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "",
+    "password": ""
+}

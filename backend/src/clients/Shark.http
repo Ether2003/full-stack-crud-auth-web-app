@@ -1,0 +1,30 @@
+##################################################################################
+## the file contains HTTP requests for the Shark resource                       ##
+## author: Refaat 🌻                                                            ##
+##################################################################################
+
+### GET a list of all Sharks documents ###
+GET http://localhost:3333/api/sharks HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZhMmE0ZGQwOTcwNGNmMjJhZGZmNTQiLCJlbWFpbCI6IkV0aGVyQGdtYWlsLmNvbSIsInJvbGUiOjAsImlhdCI6MTY3NzMzOTI4OSwiZXhwIjoxNjc3NDI1Njg5fQ.i4MVXY5msqTPYDJ3XxpYXNG7ouHAFVihovUmDVY4RHY
+
+### Create a new Shark document ###
+POST http://localhost:3333/api/sharks HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZhMmE0ZGQwOTcwNGNmMjJhZGZmNTQiLCJlbWFpbCI6IkV0aGVyQGdtYWlsLmNvbSIsInJvbGUiOjAsImlhdCI6MTY3NzMzOTI4OSwiZXhwIjoxNjc3NDI1Njg5fQ.i4MVXY5msqTPYDJ3XxpYXNG7ouHAFVihovUmDVY4RHY
+
+{
+    "name": "Ryan"
+}
+
+### Update an exisitng Shark document ###
+PUT http://localhost:3333/api/sharks/63fa2abf11da9606b4a8fcf4 HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZhMmE0ZGQwOTcwNGNmMjJhZGZmNTQiLCJlbWFpbCI6IkV0aGVyQGdtYWlsLmNvbSIsInJvbGUiOjAsImlhdCI6MTY3NzMzOTI4OSwiZXhwIjoxNjc3NDI1Njg5fQ.i4MVXY5msqTPYDJ3XxpYXNG7ouHAFVihovUmDVY4RHY
+
+{
+    "name": "New Ether"
+}
+
+### Delete an existing Shark docuemtn ###
+DELETE http://localhost:3333/api/sharks/63fa2abf11da9606b4a8fcf4 HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZhMmE0ZGQwOTcwNGNmMjJhZGZmNTQiLCJlbWFpbCI6IkV0aGVyQGdtYWlsLmNvbSIsInJvbGUiOjAsImlhdCI6MTY3NzMzOTI4OSwiZXhwIjoxNjc3NDI1Njg5fQ.i4MVXY5msqTPYDJ3XxpYXNG7ouHAFVihovUmDVY4RHY
