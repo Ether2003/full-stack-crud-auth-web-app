@@ -43,6 +43,7 @@ header button {
 }
 
 .shark-container p {
+	font-size: small;
 	color: rgb(151, 151, 151);
 }
 
