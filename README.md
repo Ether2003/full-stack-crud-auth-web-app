@@ -23,11 +23,11 @@ Create a .env file in the backend folder and set ``CONNECTION_STRING`` to your c
 ### Installing
 Clone the repository into a directory
 ```
-C:\Users\Cynthia\Desktop\this\> git clone https://github.com/Ether2003/flora.js .
+C:\Users\Refaat\Desktop\this\> git clone https://github.com/Ether2003/flora.js .
 ```
 
 Install the required NPM packages:
 ```
-C:\Users\Cynthia\Desktop\this\backend> npm install
-C:\Users\Cynthia\Desktop\this\frontend> npm install
+C:\Users\Refaat\Desktop\this\backend> npm install
+C:\Users\Refaat\Desktop\this\frontend> npm install
 ```
